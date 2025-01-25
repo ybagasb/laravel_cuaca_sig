@@ -92,15 +92,15 @@
 
             // Tentukan icon berdasarkan kondisi cuaca
             if (cuaca.includes('Berawan')) {
-                iconUrl = "https://i.im.ge/2025/01/24/HoBCD8.cloudy.png"; // Gambar untuk kondisi 'Berawan'
+                iconUrl = "https://api-apps.bmkg.go.id/storage/icon/cuaca/berawan-am.svg"; // Gambar untuk kondisi 'Berawan'
             } else if (cuaca.includes('Hujan Petir')) {
-                iconUrl = "https://i.im.ge/2025/01/24/HoBAMX.petir.png"; // Gambar untuk kondisi 'Hujan Petir'
+                iconUrl = "https://api-apps.bmkg.go.id/storage/icon/cuaca/hujan petir-am.svg"; // Gambar untuk kondisi 'Hujan Petir'
             } else if (cuaca.includes('Hujan')) {
-                iconUrl = "https://i.im.ge/2025/01/24/HoBtg9.rain.png"; // Gambar untuk kondisi 'Hujan'
+                iconUrl = "https://api-apps.bmkg.go.id/storage/icon/cuaca/hujan ringan-am.svg"; // Gambar untuk kondisi 'Hujan'
             } else if (cuaca.includes('Cerah')) {
-                iconUrl = "https://i.im.ge/2025/01/24/HoBP0K.sunny.png"; // Gambar untuk kondisi 'Cerah'
+                iconUrl = "https://api-apps.bmkg.go.id/storage/icon/cuaca/cerah-am.svg"; // Gambar untuk kondisi 'Cerah'
             } else {
-                iconUrl = "https://i.im.ge/2025/01/24/HoBAMX.petir.png"; // Default icon jika kondisi tidak cocok
+                iconUrl = "https://api-apps.bmkg.go.id/storage/icon/cuaca/hujan petir-am.svg"; // Default icon jika kondisi tidak cocok
             }
 
             return L.icon({
