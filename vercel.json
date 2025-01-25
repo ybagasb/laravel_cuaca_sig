@@ -3,55 +3,7 @@
     "framework": null,
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
-    },
-    "headers": [
-        {
-        "source": "/icons/(.*).webp",
-        "headers": [
-            {
-            "key": "Content-Type",
-            "value": "image/webp"
-            }
-        ]
-        },
-        {
-        "source": "/icons/(.*).png",
-        "headers": [
-            {
-            "key": "Content-Type",
-            "value": "image/png"
-            }
-        ]
-        },
-        {
-        "source": "/media/(.*).jpeg",
-        "headers": [
-            {
-            "key": "Content-Type",
-            "value": "image/jpeg"
-            }
-        ]
-        },
-        {
-        "source": "/media/(.*).svg",
-        "headers": [
-            {
-            "key": "Content-Type",
-            "value": "image/svg+xml"
-            }
-        ]
-        }
-    ],
-    "rewrites": [
-        {
-        "source": "/icons/(.*)",
-        "destination": "/public/icons/$1"
-        },
-        {
-        "source": "/media/(.*)",
-        "destination": "/public/media/$1"
-        }
-    ],    
+    }, 
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
         { "src": "/(.*)", "dest": "/api/index.php" }
